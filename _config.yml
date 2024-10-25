@@ -58,3 +58,7 @@ defaults:
       path: ""
     values:
       layout: default
+
+collections:
+  teletext:
+    output: true
