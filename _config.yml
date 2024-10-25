@@ -55,6 +55,7 @@ plugins:
 
 defaults:
   - scope:
-      path: "teletext/2002-08-31"
+      path: "teletext/2002-08-31/"
+      type: "pages"
     values:
       layout: default
