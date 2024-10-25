@@ -3,8 +3,6 @@ layout: post
 title:  "Switching Audio Devices With A Controller In Steam Big Picture"
 ---
 
-# Switching Audio Devices With A Controller In Steam Big Picture
-
 While using services for playing games remotely (such as Steam Remote Play, Sunshine and Moonlight, etc) the hosts audio is piped through a virtual device which streams game audio to the client.
 
 After finishing the session the hosts audio device SHOULD switch back to your default hardware but this doesn't always occur. This is especially troublesome if you run your host keyboard and mouseless working solely through Steam Big Picture. Similarly sometimes the audio device isn't switched when starting a streaming session, resulting in no audio on the client.
