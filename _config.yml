@@ -32,8 +32,8 @@ mastodon:
   instance: mastodonapp.uk
 
 # Build settings
-#theme: minima
-theme: jekyll-theme-hacker
+theme: minima
+#theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
 
