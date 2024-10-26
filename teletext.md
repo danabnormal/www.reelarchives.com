@@ -4,6 +4,9 @@ title: "Teletext Pages"
 permalink: /teletext_about
 datatable: true
 ---
+<link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css" />
+<script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+
 Here you can navigate Teletext pages which I've pulled off of VHS tapes.
 
 Some dates may be incorrect and you'll notice various typos that haven't been fixed yet - please bear with me!
