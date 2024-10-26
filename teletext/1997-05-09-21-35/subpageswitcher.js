@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
   if (totalSubpages <= 1) return;
 
   let currentIndex = 0;
+  let isPaused = false;
+  let interval;
 
   // Function to show only the current div and hide the others
   function showCurrentSubpage() {
@@ -15,12 +17,33 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   }
 
+  // Function to start cycling through divs
+  function startInterval() {
+      interval = setInterval(function() {
+          currentIndex = (currentIndex + 1) % totalSubpages;
+          showCurrentSubpage();
+      }, 5000); // 5000 milliseconds = 5 seconds
+  }
+
+  // Function to pause the interval
+  function pauseInterval() {
+      clearInterval(interval);
+  }
+
   // Initially show the first subpage
   showCurrentSubpage();
+  startInterval();
 
-  // Set interval to cycle through the divs every 5 seconds
-  setInterval(function() {
-      currentIndex = (currentIndex + 1) % totalSubpages;
-      showCurrentSubpage();
-  }, 5000); // 5000 milliseconds = 5 seconds
+  // Event listener for spacebar to toggle pause/resume
+  document.addEventListener("keydown", function(event) {
+      if (event.code === "Space") {
+          event.preventDefault(); // Prevent page from scrolling when spacebar is pressed
+          if (isPaused) {
+              startInterval();
+          } else {
+              pauseInterval();
+          }
+          isPaused = !isPaused;
+      }
+  });
 });
