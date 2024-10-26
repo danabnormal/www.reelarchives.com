@@ -33,7 +33,6 @@ mastodon:
 
 # Build settings
 theme: minima
-theme: jekyll-theme-minimal
 #theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
