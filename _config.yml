@@ -32,13 +32,11 @@ mastodon:
   instance: mastodonapp.uk
 
 # Build settings
-#theme: minima
-remote_theme: pages-themes/hacker@v0.2.0
+theme: minima
 
 #theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
