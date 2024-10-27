@@ -11,7 +11,7 @@ Some dates may be incorrect and you'll notice various typos that haven't been fi
   {% for capture in site.data.teletextcaptures.captures %}
     <tr>
       <td>
-        <a href={{capture.capture_folder}}/>{{capture.broadcast_date}}</a>
+        <a href="{{capture.capture_folder}}/">{{capture.broadcast_date}}</a>
       </td>
       <td>
         {{capture.service}}
