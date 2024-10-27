@@ -10,9 +10,20 @@ Some dates may be incorrect and you'll notice various typos that haven't been fi
 <table>
   {% for capture in site.data.teletextcaptures.captures %}
     <tr>
-    {% for item in row %}
       <td>
-        {{ item }}
+        <a href={{capture.capture_folder}}/>{{capture.broadcast_date}}</a>
+      </td>
+      <td>
+        {{capture.service}}
+      </td>
+      <td>
+        {{capture.channel}}
+      </td>
+      <td>
+        {{capture.quality}}
+      </td>
+      <td>
+        {{capture.notable_content}}
       </td>
     {% endfor %}
     </tr>
