@@ -8,10 +8,20 @@ Here you can navigate Teletext pages which I've pulled off of VHS tapes. FAQ fol
 Some dates may be incorrect and you'll notice various typos that haven't been fixed yet - please bear with me!
 
 <table>
+  <tr>
+    <th></th>
+    <th>Date</th>
+    <th>Service</th>
+    <th>Channel</th>
+    <th>Quality</th>
+    <th>Notable Content</th>
+  </tr>
   {% for capture in site.data.teletextcaptures.captures %}
     <tr>
       <td>
-        <a href="{{capture.capture_folder}}/">{{capture.broadcast_date}}</a>
+      </td>
+      <td>
+        <a href="/teletext/{{capture.capture_folder}}/">{{capture.broadcast_date}}</a>
       </td>
       <td>
         {{capture.service}}
@@ -20,7 +30,13 @@ Some dates may be incorrect and you'll notice various typos that haven't been fi
         {{capture.channel}}
       </td>
       <td>
-        {{capture.quality}}
+        {% assign stars = capture.quality | plus: 0 %}  <!-- Convert to integer just in case -->
+        {% for i in (1..stars) %}
+          ★
+        {% endfor %}
+        {% for i in (stars..4) %}
+          ☆
+        {% endfor %}
       </td>
       <td>
         {{capture.notable_content}}
