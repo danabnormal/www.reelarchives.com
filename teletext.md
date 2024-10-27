@@ -7,6 +7,22 @@ Here you can navigate Teletext pages which I've pulled off of VHS tapes. FAQ fol
 
 Some dates may be incorrect and you'll notice various typos that haven't been fixed yet - please bear with me!
 
+<table>
+  {% for capture in site.data.teletextcaptures.captures %}
+    <tr>
+    {% for item in row %}
+      <td>
+        {{ item }}
+      </td>
+    {% endfor %}
+    </tr>
+  {% endfor %}
+</table>
+
+
+
+
+
 
 |    | Broadcast Date                                            | Tape  | Service      | Channel        | Quality  | Notable Content |
 | ---| --------------------------------------------------------- | ----- | ----------- |--------------- | -------  |                 |
