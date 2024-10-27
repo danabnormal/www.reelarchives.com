@@ -25,7 +25,6 @@ Some dates may be incorrect and you'll notice various typos that haven't been fi
       <td>
         {{capture.notable_content}}
       </td>
-    {% endfor %}
     </tr>
   {% endfor %}
 </table>
