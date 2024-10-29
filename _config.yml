@@ -33,7 +33,7 @@ mastodon:
 
 # Build settings
 #theme: minima
-remote_theme: jekyll-theme-hydejack
+theme: jekyll-theme-hydejack
 plugins:
   - jekyll-feed
 
