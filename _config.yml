@@ -23,7 +23,7 @@ email: dan@danabnormal.com
 description: >- # this means to ignore newlines until "baseurl:"
   I break stuff, occassionally fix stuff. My mind wanders and this
   is where most of that wandering will be kept. Sorry about that.
-baseurl: "" # the subpath of your site, e.g. /blog
+#baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:  danabnormal
@@ -33,8 +33,7 @@ mastodon:
 
 # Build settings
 #theme: minima
-#theme: jekyll-theme-hydejack
-remote-theme: hydecorp/hydejack@v9
+theme: jekyll-theme-hydejack
 plugins:
   - jekyll-feed
 
