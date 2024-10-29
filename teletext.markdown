@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Teletext Pages"
-permalink: /teletext_about
+permalink: /teletext/
 ---
 Here you can navigate Teletext pages which I've pulled off of VHS tapes. FAQ follows.
 
