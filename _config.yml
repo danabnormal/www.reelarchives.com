@@ -32,9 +32,8 @@ mastodon:
   instance: mastodonapp.uk
 
 # Build settings
-theme: minima
-
-#theme: jekyll-theme-hacker
+#theme: minima
+theme: jekyll-theme-hydejack
 plugins:
   - jekyll-feed
 
@@ -57,3 +56,14 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Specific to Hydejack theme
+menu:
+  - title: Blog
+    url:   /blog/
+  - title: Projects
+    url:   /projects/
+  - title: Teletext
+    url:   /teletext/
+  - title: About
+    url:   /about/
