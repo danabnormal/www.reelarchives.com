@@ -18,14 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Dans Random Stuff
-email: dan@danabnormal.com
+title: ReelArchives
+email: hello@reelarchives.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I break stuff, occassionally fix stuff. My mind wanders and this
-  is where most of that wandering will be kept. Sorry about that.
+  The web home of ReelArchives, a collection of restored and
+  recovered data from various media.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username:
+youtube_username:  reelarchives
 github_username:  danabnormal
 mastodon:
 - username: danabnormal
