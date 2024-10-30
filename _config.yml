@@ -57,3 +57,29 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# HYDEJACK CONFIG
+#accent_image: /assets/img/sidebar-bg.jpg
+accent_image: none
+accent_color: rgb(0,0,0)
+theme_color:  rgb(129,133,137)
+#logo: /assets/images/logo_transparent.png
+
+font:         Noto Sans, Helvetica, Arial, sans-serif
+font_heading: Roboto Slab, Helvetica, Arial, sans-serif
+google_fonts: Roboto+Slab:700|Noto+Sans:400,400i,700,700i
+
+#favicon: /favicon.ico
+#apple_touch_icon: /assets/img/logo.png
+hydejack:
+  dark_mode:
+    dynamic: false
+    icon:    true
+    always:  true
+
+author:
+  name:  Reel Archives
+  email: hello@reelarchives.com
+  social:
+    youtube: ReelArchives
+    mastodon: https://mastodonapp.uk/@danabnormal
