@@ -83,3 +83,7 @@ author:
   social:
     youtube: ReelArchives
     mastodon: https://mastodonapp.uk/@danabnormal
+
+menu:
+  - title: Teletext
+    url:   /teletext/
