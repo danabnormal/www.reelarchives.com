@@ -1,0 +1,76 @@
+---
+# Copyright (c) 2024 Daniel Buttery <d@niel.biz>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+layout: page
+---
+
+<!--
+{% raw %}
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="http://www.google.com">sdfsdfs</iframe>
+{% endraw %}
+-->
+
+<body>
+
+  <div id="wrapper" style="position:relative">
+    <iframe style="position:absolute;top:0px;width:100%;height:100vh;" src="http://anydomain.com"></iframe>
+
+
+  <iframe id='teletext_page' scrolling='no' frameborder='0' style='position:absolute; width: 100%; height:100vh' srcdoc='
+    <html>
+    <head>
+      <script type="text/javascript" src="/teletext/common/subpageswitcher.js"></script>
+      <link rel="stylesheet" type="text/css" href="/teletext/common/teletext.css" title="Default Style"/>
+      <link rel="alternative stylesheet" type="text/css" href="/teletext/common/teletext-noscanlines.css" title="No Scanlines"/>
+    </head>
+    <body>
+    {{ content }}
+    </body>
+    </html
+  ' width='100%'>jhgjhg</iframe>
+</div>
+
+</body>
+<!--
+{{ content }}
+
+-->
+
+
+
+
+<!--
+<article class="page mb6" role="article">
+  <header>
+    <h1 class="page-title">{{ page.title }}</h1>
+  </header>
+
+
+
+  {% for file in site.static_files %}
+    {% if file.path contains include.folder %}
+      {% include {{ file.path }} %}
+    {% endif %}
+  {% endfor %}
+
+
+
+
+</article>
+
+{% include components/dingbat.html %}
+{% include body/comments.html %}
+-->
